@@ -3,62 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dangrek&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+10&family=Kanit&family=Londrina+Sketch&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Tilt+Neon&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="left">
         <img src="./img/leaves.jpg" alt="picture of leaves">
+        <div class="odin-logo">
+            <img src="./img/odin-lined.png" alt="odin logo">
+            <p>ODIN</p>
+        </div>
+        <p class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto"  target="_blank" rel="noopener noreferrer">Hallie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
     </div>
     <div class="right">
         <p>This is not a real online service! you know you need something like
             this to make you realize your deepest dreams. Sign up <em>now</em> to get started.
             <br><br>
-            You know you want to.
+            You <em>know</em> you want to.
         </p>
         <div class="form-wrapper">
-            <h4>Let's do this!</h4>
+            <p>Let's do this!</p>
             <form action="" method="post">
                 <div class="input-row">
                         <div class="input-col">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name" title="First Name">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
                         </div>
                     
                         <div class="input-col">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name" title="Last Name">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
                         </div>
                 </div>
                 
                 <div class="input-row">
                         <div class="input-col">
-                            <label for="user-email"> Email</label>
-                            <input type="email" name="email" id="user-email" title="Email">
+                            <label for="user-email">EMAIL</label>
+                            <input type="email" name="email" id="user-email">
                         </div>
                     
                         <div class="input-col">
-                            <label for="phone-number">Phone Number</label>
-                            <input type="number" name="phone-number" id="phone-number" title="Phone Number">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone-number" id="phone-number">
                         </div>
                 </div>
                 
                 <div class="input-row">
+                    <!-- autocomplete suggested by google developer tools -> autofill new password -->
                         <div class="input-col">
-                            <label for="user-password">Password</label>
-                            <input type="password" name="password" id="user-password" title="Password" autocomplete="new-password">
+                            <label for="user-password">PASSWORD</label>
+                            <input type="password" name="password" id="user-password" autocomplete="new-password" required>
                         </div>
                     
                         <div class="input-col">
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" name="confirm-password" id="confirm-password" title="Confirm Password" autocomplete="new-password">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" autocomplete="new-password" required>
                         </div>
                 </div>
             </form>
         </div>
         <div class="create-account">
             <button>Create Account</button>
-            <p>Already have an account? <a href="#">Sign in</a></p>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
     

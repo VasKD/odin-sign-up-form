@@ -2,27 +2,74 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: "Fira Sans", sans-serif;
+    background-color: rgb(244, 244, 244);
+
 }
 
 .left {
     height: 100vh;
     display: flex;
-    align-items: stretch;
+    justify-content: center;
 }
 
-.left img {
+.left>img {
     height: 100%;
-    width: 35vw;
+    width: 40vw;
     object-fit: cover; /* minimize distortion */
+}
+
+p.credit {
+    position: absolute;
+    color: white;
+    bottom: 5px;
+}
+
+.credit a {
+    color: white;
+}
+
+.odin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.437);
+    width: 40vw;
+    height: 20vh;
+    top: 180px;
+}
+
+.odin-logo>img {
+    width: 16%;
+    min-width: 60px;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./fonts/Norse-Bold.otf");
+}
+
+
+.odin-logo p {
+    font-family: "Norse-Bold", sans-serif;
+    color: white;
+    font-size: 4rem;
 }
 
 .right {
     display: flex;
     flex-direction: column;
     width: 65vw;
-    margin-left: 40px;
-    margin-top: 120px;
-    padding-right: 300px;
+    
+}
+
+div.right > p {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 3vw;
+    padding-right: 10vw;
+    margin-top: 15vh;
 }
 
 .input-row {
@@ -32,13 +79,54 @@ body {
 .input-col {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 40px;
     margin-bottom: 20px;
 }
 
 .form-wrapper {
     margin-bottom: 40px;
+    background-color: white;
+    padding-left: 3vw;
+    box-shadow: 0px 5px 10px rgba(49, 49, 49, 0.152); 
 }
 
+div.form-wrapper>p {
+    font-size: 18px;
+    font-weight: 500;
+}
 
+input:invalid {
+    border-color: rgba(255, 0, 0, 0.404);
+}
 
+label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+input {
+    border-radius: 6px;
+    margin-top: 2px;
+    padding: 4px;
+    border-color: rgba(0, 0, 0, 0.415);
+}
+
+.create-account {
+    padding-left: 3vw;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.create-account a {
+    color: #596D48;
+    text-decoration: none;
+}
