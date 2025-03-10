@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left {
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.left img {
+    height: 100%;
+    width: 35vw;
+    object-fit: cover; /* minimize distortion */
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    margin-left: 40px;
+    margin-top: 120px;
+    padding-right: 300px;
+}
+
+.input-row {
+    display: flex;
+}
+
+.input-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.form-wrapper {
+    margin-bottom: 40px;
+}
+
+
+
